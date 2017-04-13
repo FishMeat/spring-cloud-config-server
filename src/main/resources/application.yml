@@ -1,11 +1,8 @@
-server:
-  port: 8888
 spring:
   cloud:
     config:
       server:
         git:
-          uri: file://Users/whthomas/config-repo
-      uri: http://localhost:8888
-  application:
-    name: configserver
+          uri: https://github.com/fishmeat/config-repo
+server:
+  port: 8888
