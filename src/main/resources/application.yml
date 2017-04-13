@@ -5,4 +5,7 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: file://Users/whthomas/config-repo
+      uri: http://localhost:8888
+  application:
+    name: configserver
