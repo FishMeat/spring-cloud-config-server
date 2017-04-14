@@ -40,7 +40,7 @@
     </dependencies>
 
     <properties>
-        <docker.image.prefix>fishmeat</docker.image.prefix>
+        <docker.image.prefix>registry.cn-hangzhou.aliyuncs.com/fishmeat</docker.image.prefix>
     </properties>
 
     <build>
@@ -54,7 +54,7 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.13</version>
                 <configuration>
-                    <serverId>docker-hub</serverId>
+                    <serverId>fishmeat-hub</serverId>
                     <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
                     <dockerDirectory>src/main/docker</dockerDirectory>
                     <resources>
