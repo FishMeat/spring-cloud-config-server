@@ -1,5 +1,4 @@
 FROM frolvlad/alpine-oraclejdk8:slim
-RUN mvn package
 VOLUME /tmp
 ADD spring-cloud-config-server-1.0-SNAPSHOT.jar app.jar
 RUN sh -c 'touch /app.jar'
